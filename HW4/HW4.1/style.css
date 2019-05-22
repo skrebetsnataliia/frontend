@@ -1,0 +1,94 @@
+.div__item{
+    color: white;
+    display: inline-block;
+}
+.div{
+    margin: 0 auto;
+    box-sizing: border-box;
+} 
+p{
+    text-align: center;
+    font-size: 60px;
+    font-weight: bold;
+}
+.div__item--one{
+    background: red;
+}
+.div__item--two{
+    background: crimson;
+}
+.div__item--three{
+    background: violet;
+}
+.div__item--four{
+    background: green;
+}
+@media only screen and (max-width:320px){
+    .div{
+        width: 150px;
+        border: 5px solid;
+    }
+    .div__item{
+        width: 120px;
+        height: 120px;
+        margin:10px 5px 0 10px;
+    }
+    .div__item--four{
+        margin-bottom: 10px;
+    }
+    p{
+        font-size: 36px;
+    }
+}
+@media only screen and (max-width:600px) and (min-width:321px){
+    .div{
+        width: 280px;
+        border: 5px solid;
+    }
+    .div__item{
+        width: 120px;
+        height: 120px;
+        margin:10px 5px 0 0;
+    }
+    .div__item--one, .div__item--three{
+        margin-left: 10px;
+    }
+    .div__item--three, .div__item--four{
+        margin-bottom: 10px;
+    }
+    p{
+        font-size: 36px;
+    }
+}
+@media only screen and (max-width:900px) and (min-width:601px){
+    .div{
+       
+        width: 440px;
+        border: 5px solid;
+    }
+    .div__item{
+        width: 200px;
+        height: 200px;
+        margin:10px 5px 0 0;
+    }
+    .div__item--one, .div__item--three{
+        margin-left: 10px;
+    }
+    .div__item--three, .div__item--four{
+        margin-bottom: 10px;
+    }
+}
+@media only screen and (min-width:901px){
+    .div{
+        width: 855px;
+        border: 5px solid;
+    }
+    .div__item{
+        width: 200px;
+        height: 200px;
+        margin:10px 5px 10px 0;
+    }
+    .div__item--one{
+        margin-left: 10px;
+    }
+} 

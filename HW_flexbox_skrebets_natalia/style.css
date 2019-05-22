@@ -1,0 +1,48 @@
+body{
+    background: url(img.png);
+    background-size: cover;
+}
+.container, .link{
+    height: 100vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+.container__item--h1{
+    font-weight:100;
+    font-size: 50px;
+}
+.container__item--h1:before{
+    content:"Alecto ";
+    font-weight: bold;
+}
+.container__item{
+    margin-top: 30px;
+    text-decoration: none;
+}
+a{
+    color: white;
+}
+a:visited{
+    color: white;
+}
+.container__item--link1{
+    border: 1px solid white;
+    padding: 5px 35px;
+    border-radius: 50px;
+    position: relative;
+    top:-136px;
+}
+.container__item--left{
+    align-self: flex-start;
+    position: relative;
+    top:-86px;
+}
+.container__item--right{
+    align-self: flex-end;
+    position: relative;
+    top:-151px;
+}
