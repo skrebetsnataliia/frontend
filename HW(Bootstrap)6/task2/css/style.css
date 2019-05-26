@@ -1,0 +1,13 @@
+.block_item{
+    display: flex;
+    align-items: flex-end;
+    background: blue;
+    height: 180px;
+    justify-content:flex-end;
+    font-size: 300%;
+    color: white;
+}
+.col-sm-4{
+    background: blue;
+    height: 120px;
+}

@@ -1,6 +1,7 @@
 body{
-    background:url("images.jpg");
+    background:url(../img/images.jpg);
     background-repeat: no-repeat;
+    background-size: 100%;
 }
 header{
     text-align: center;

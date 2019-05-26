@@ -1,0 +1,20 @@
+.nav-link{
+    font-weight: bold;
+    color: rgb(80, 106, 133);
+}
+.main{
+    background: url(../img/background/Home-Agency-Style-Desktop.png);
+}
+h1{
+    color: azure;
+    font-weight: bold;
+}
+p{
+    font-size: 24px;
+}
+.far{
+    color:rgb(0,187,155);
+}
+.footer-p{
+    font-size: 14px;
+}
