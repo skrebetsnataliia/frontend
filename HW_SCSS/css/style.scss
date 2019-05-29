@@ -1,0 +1,86 @@
+$h2-size:60px;
+$p-size:18px;
+$h4-size:30px;
+$button-bg:rgb(23, 218, 163);
+$button-color:white;
+$text-color:rgb( 135, 148, 158);
+$text-weight:bold;
+p {
+    font-size: $p-size;
+    color: $text-color;
+}
+
+.page {
+    p {
+        text-align: center;
+    }
+}
+
+h2 {
+    font-size: $h2-size;
+    color: $text-color;
+}
+
+h4 {
+    font-size: $h4-size;
+    text-align: center;
+}
+
+@mixin radius {
+    border: 0;
+    border-radius: 1000px;
+}
+
+@mixin btn {
+    background: $button-bg;
+    color: $button-color;
+    @include radius;
+    padding: 15px 30px;
+    font-size: 14px;
+    font-weight: bold;
+    padding-top: 10px;
+}
+
+@mixin center {
+    width: 100%;
+    margin: auto;
+}
+
+header {
+    text-align: center;
+    @include center;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+}
+
+button {
+    @include radius;
+    @include btn;
+    position: relative;
+    left: 45%;
+}
+
+.page {
+    img {
+        @include radius;
+        width: 60%;
+        position: relative;
+        left: 20%;
+    }
+}
+
+.image {
+    width: 150%;
+    img {
+        width: 100%;
+    }
+}
+
+.button {
+    position: relative;
+    left: 0;
+}
