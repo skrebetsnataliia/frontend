@@ -1,0 +1,38 @@
+section {
+  width: 90%;
+  margin: auto; }
+
+.block {
+  display: flex;
+  color: white;
+  text-align: end; }
+
+.table_one td {
+  background: blue;
+  box-sizing: border-box;
+  vertical-align: bottom;
+  font-size: 45px;
+  width: 225px;
+  height: 150px; }
+
+.table_two td {
+  width: 150px;
+  height: 100px;
+  background: blue;
+  box-sizing: border-box;
+  vertical-align: bottom;
+  font-size: 45px; }
+
+.table_two {
+  position: relative;
+  right: 1px; }
+
+@media only screen and (max-width: 650px) {
+  .block {
+    flex-direction: column; }
+
+  .table_two {
+    position: relative;
+    bottom: 1px; } }
+
+/*# sourceMappingURL=style.css.map */

@@ -53,4 +53,16 @@ button {
   position: relative;
   left: 0; }
 
+@media only screen and (max-width: 650px) {
+  section {
+    flex-direction: column;
+    justify-content: flex-end; }
+
+  .image img {
+    width: 400px; } }
+@media only screen and (max-width: 650px) {
+  .image img {
+    width: 340px;
+    margin: auto; } }
+
 /*# sourceMappingURL=style.css.map */

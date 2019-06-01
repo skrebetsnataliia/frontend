@@ -1,0 +1,97 @@
+header {
+  text-align: center;
+  font-size: 60px; }
+
+.content {
+  display: flex;
+  justify-content: space-around; }
+  .content h4,
+  .content p {
+    height: 20px;
+    text-align: center; }
+  .content p {
+    font-weight: bold;
+    font-size: 72px; }
+  .content h4 {
+    font-size: 24px;
+    text-transform: uppercase;
+    height: 0; }
+  .content p::first-letter {
+    font-size: 40px; }
+  .content p::after {
+    content: "/mon";
+    color: #8492af;
+    font-size: 24px; }
+  .content div {
+    text-align: center;
+    border: 0 solid;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
+    padding: 0 20px 20px 20px; }
+
+ul {
+  list-style-type: none;
+  margin-right: 40px; }
+  ul li:before {
+    content: '';
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    background-size: 20px;
+    background-repeat: no-repeat;
+    margin-right: 5px;
+    border: 0;
+    border-radius: 10px;
+    background-image: url(../img/check-circle-regular.svg);
+    background-color: #7ccf7c; }
+
+.list_item-bronze li:nth-child(3)::before {
+  content: '';
+  background-image: url(../img/times-circle-regular.svg);
+  background-color: #dd8787; }
+
+.list_item-bronze li:nth-child(4)::before {
+  content: '';
+  background-image: url(../img/times-circle-regular.svg);
+  background-color: #dd8787; }
+
+.list_item-silver li:nth-child(4)::before {
+  content: '';
+  background-image: url(../img/times-circle-regular.svg);
+  background-color: #dd8787; }
+
+ul:nth-last-child(2) {
+  background: violet; }
+
+.page {
+  text-align: center;
+  color: #8492af; }
+  .page p {
+    margin: 50px 100px 0 100px; }
+
+button {
+  margin: 50px 0;
+  background: #5584ff;
+  color: beige;
+  font-weight: bold;
+  border: 0;
+  padding: 10px 30px;
+  border-radius: 50px; }
+
+@media only screen and (max-width: 900px) {
+  .content {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap; }
+    .content div {
+      width: 80%;
+      margin: auto;
+      margin-bottom: 30px; } }
+@media only screen and (max-width: 600px) {
+  button {
+    margin-top: 20px; } }
+@media only screen and (max-width: 450px) {
+  .page p {
+    margin-right: 0;
+    margin-left: 0; } }
+
+/*# sourceMappingURL=style.css.map */

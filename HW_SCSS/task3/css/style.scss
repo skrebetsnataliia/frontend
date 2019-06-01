@@ -1,0 +1,65 @@
+$height1:200px;
+$height2:100px;
+$bord: 2px solid blue;
+article {
+    width: 70%;
+    margin: auto;
+}
+
+@mixin flex_div {
+    .block_item {
+        display: flex;
+        div {
+            border: 1px solid blue;
+        }
+    }
+}
+
+@for $i from 1 through 3 {
+    @if($i==1) {
+        @include flex_div;
+        .block_item-one {
+            height: $height1;
+            div:first-child {
+                width: 80%;
+                border-left: $bord;
+                border-top: $bord;
+            }
+            div:nth-child(2) {
+                width: 40%;
+                border-right: $bord;
+                border-top: $bord;
+            }
+        }
+    }
+    @if($i==2) {
+        @include flex_div;
+        .block_item-two {
+            height: $height1;
+            div:first-child {
+                width: 40%;
+                border-left: $bord;
+            }
+            div:nth-child(2) {
+                width: 80%;
+                border-right: $bord;
+            }
+        }
+    }
+    @if($i==3) {
+        @include flex_div;
+        .block_item-three {
+            height: $height2;
+            div:first-child {
+                width: 50%;
+                border-bottom: $bord;
+                border-left: $bord;
+            }
+            div:nth-child(2) {
+                width: 50%;
+                border-bottom: $bord;
+                border-right: $bord;
+            }
+        }
+    }
+}

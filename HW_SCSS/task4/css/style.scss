@@ -1,0 +1,50 @@
+$wid:450px;
+$heig:300px;
+$bg:blue;
+$text-color:white;
+$vert_algn:bottom;
+$text-size:45px;
+@mixin text {
+    background: $bg;
+    box-sizing: border-box;
+    vertical-align: $vert_algn;
+    font-size: $text-size;
+}
+
+section {
+    width: 90%;
+    margin: auto;
+}
+
+.block {
+    display: flex;
+    color: $text-color;
+    text-align: end;
+}
+
+.table_one td {
+    @include text;
+    width: $wid/2;
+    height: $heig/2;
+}
+
+.table_two td {
+    width: $wid/3;
+    height: $heig/3;
+    @include text;
+}
+
+.table_two {
+    position: relative;
+    right: 1px;
+}
+
+@media only screen and (max-width:650px) {
+    .block {
+        flex-direction: column;
+    }
+    .table_two {
+        position: relative;
+        bottom: 1px;
+    }
+}

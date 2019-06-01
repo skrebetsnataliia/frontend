@@ -1,0 +1,128 @@
+$align-text:center;
+@mixin text-center {
+    text-align: center;
+}
+
+header {
+    @include text-center;
+    font-size: 60px;
+}
+
+.content {
+    display: flex;
+    justify-content: space-around;
+    h4,
+    p {
+        height: 20px;
+        @include text-center;
+    }
+    p {
+        font-weight: bold;
+        font-size: 72px;
+    }
+    h4 {
+        font-size: 24px;
+        text-transform: uppercase;
+        height: 0;
+    }
+    p::first-letter {
+        font-size: 40px;
+    }
+    p::after {
+        content: "/mon";
+        color: rgb(132, 146, 175);
+        font-size: 24px;
+    }
+    div {
+        @include text-center;
+        border: 0 solid;
+        box-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
+        padding: 0 20px 20px 20px;
+    }
+}
+
+ul {
+    list-style-type: none;
+    margin-right: 40px;
+    li:before {
+        content: '';
+        display: inline-block;
+        height: 20px;
+        width: 20px;
+        background-size: 20px;
+        background-repeat: no-repeat;
+        margin-right: 5px;
+        border: 0;
+        border-radius: 10px;
+        background-image: url(../img/check-circle-regular.svg);
+        background-color: rgb(124, 207, 124);
+    }
+}
+
+@mixin not {
+    content: '';
+    background-image: url(../img/times-circle-regular.svg);
+    background-color: rgb(221, 135, 135);
+}
+
+.list_item-bronze li:nth-child(3)::before {
+    @include not;
+}
+
+.list_item-bronze li:nth-child(4)::before {
+    @include not;
+}
+
+.list_item-silver li:nth-child(4)::before {
+    @include not;
+}
+
+ul:nth-last-child(2) {
+    background: violet;
+}
+
+.page {
+    text-align: center;
+    color: rgb(132, 146, 175);
+    p {
+        margin: 50px 100px 0 100px;
+    }
+}
+
+button {
+    margin: 50px 0;
+    background: rgb(85, 132, 255);
+    color: beige;
+    font-weight: bold;
+    border: 0;
+    padding: 10px 30px;
+    border-radius: 50px;
+}
+
+@media only screen and (max-width: 900px) {
+    .content {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        div {
+            width: 80%;
+            margin: auto;
+            margin-bottom: 30px;
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    button {
+        margin-top: 20px;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .page {
+        p {
+            margin-right: 0;
+            margin-left: 0;
+        }
+    }
+}
