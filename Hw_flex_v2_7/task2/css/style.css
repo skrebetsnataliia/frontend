@@ -1,115 +1,140 @@
-.menu{
-    display:flex;
+.menu {
+    display: flex;
     flex-direction: row;
     width: 100%;
     justify-content: flex-end;
 }
-.menu-link{
+
+.menu-link {
     text-decoration: none;
     color: gray;
     font-weight: bold;
-    margin-right:10px;
+    margin-right: 10px;
 }
-.menu-link:visited{
+
+.menu-link:visited {
     color: gray;
 }
-.menu-list{
+
+.menu-list {
     display: flex;
     flex-direction: row;
     list-style: none;
-    position:relative;
+    position: relative;
     right: 10%;
 }
-#menu-logo{
+
+#menu-logo {
     position: relative;
-    right:75%;
+    right: 75%;
 }
-.menu-link_contact{
+
+.menu-link_contact {
     color: rgb(14, 114, 196);
 }
-.menu-link_contact:visited{
+
+.menu-link_contact:visited {
     color: rgb(14, 114, 196);
 }
-.menu-link:hover{
+
+.menu-link:hover {
     color: aqua;
 }
-.main-item_address::before{
+
+.section-item_address::before {
     content: "Address:";
-    font-weight:bold;
+    font-weight: bold;
     color: black;
 }
-.main-item_phone::before{
+
+.section-item_phone::before {
     content: "Phone:";
-    font-weight:bold;
+    font-weight: bold;
     color: black;
 }
-.main-item_email::before{
+
+.section-item_email::before {
     content: "Email:";
-    font-weight:bold;
+    font-weight: bold;
     color: black;
 }
-.main-item_fax::before{
+
+.section-item_fax::before {
     content: "Fax:";
-    font-weight:bold;
+    font-weight: bold;
     color: black;
 }
-.main-item{
-    color:grey;
+
+.section-item {
+    color: grey;
 }
-.main_div{
+
+article {
     width: 90%;
-    display:flex;
-    flex-direction:row;
+    display: flex;
+    flex-direction: row;
     background: lightgrey;
     justify-content: center;
     position: relative;
     left: 45px;
     padding-bottom: 50px;
 }
-.main_info{
-    width:35%;
+
+.section_info {
+    width: 35%;
 }
-.main_form{
+
+.section_form {
     display: flex;
-    flex-direction:column;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     padding-top: 50px;
 }
-input, button, textarea{
+
+input,
+button,
+textarea {
     margin-top: 10px;
 }
-iframe{
+
+iframe {
     width: 90%;
 }
-.main_map{
-    display:flex;
-    justify-content:center;
+
+.section_map {
+    display: flex;
+    justify-content: center;
     position: relative;
     left: -23px;
 }
-button{
+
+button {
     padding: 5px;
     background: rgb(0, 153, 255);
     color: beige;
-    align-self:flex-start;
+    align-self: flex-start;
 }
-.footer{
-    height: 250px;;
+
+.footer {
+    height: 250px;
+    ;
     width: 90%;
     background: rgba(0, 0, 0, 0.836);
     color: rgb(245, 245, 220);
-    display:flex;
+    display: flex;
     position: relative;
-    left:45px;
-    justify-content:space-around;
+    left: 45px;
+    justify-content: space-around;
     align-items: center;
 }
-.footer_item-three{
+
+.footer_item-three {
     position: relative;
     left: 30px;
 }
-.footer_item-four{
+
+.footer_item-four {
     position: relative;
     right: 30px;
 }
