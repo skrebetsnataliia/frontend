@@ -1,0 +1,35 @@
+.nav-link {
+    font-weight: bold;
+}
+
+.section-item_address::before {
+    content: "Address:";
+    font-weight: bold;
+    color: black;
+}
+
+.section-item_phone::before {
+    content: "Phone:";
+    font-weight: bold;
+    color: black;
+}
+
+.section-item_email::before {
+    content: "Email:";
+    font-weight: bold;
+    color: black;
+}
+
+.section-item_fax::before {
+    content: "Fax:";
+    font-weight: bold;
+    color: black;
+}
+
+iframe {
+    width: 100%;
+}
+
+ul {
+    list-style: none;
+}
