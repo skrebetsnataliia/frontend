@@ -1,20 +1,26 @@
-.nav-link{
+.nav-link {
     font-weight: bold;
     color: rgb(80, 106, 133);
 }
-.main{
+
+article {
     background: url(../img/background/Home-Agency-Style-Desktop.png);
 }
-h1{
+
+h1 {
     color: azure;
     font-weight: bold;
 }
-p{
-    font-size: 24px;
+
+.footer_img {
+    position: relative;
+    left: -4%;
 }
-.far{
-    color:rgb(0,187,155);
+
+.far {
+    color: rgb(0, 187, 155);
 }
-.footer-p{
+
+.footer-p {
     font-size: 14px;
 }
