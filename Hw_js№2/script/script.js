@@ -41,3 +41,16 @@ while (j < 10) {
     console.log(j * j);
     j++;
 }
+console.log(" ");
+console.log("Task4");
+
+function isBigger(a, b) {
+    if (a > b) {
+        return a;
+    } else if (a < b) {
+        return b;
+    } else {
+        return "=";
+    }
+}
+console.log(isBigger(9, 9));
