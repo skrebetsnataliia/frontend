@@ -1,19 +1,19 @@
-// console.log("task1");
-// var result = prompt("Enter number", "0");
-// if (result > 0) {
-//     console.log(1);
-// } else if (result < 0) {
-//     console.log(-1);
-// } else if (result == 0) {
-//     console.log(0);
-// } else if (result == null) {
-//     console.log("You didn't enter a number");
-// } else {
-//     console.log("It's not a number");
-// }
-// (result > 0) ? console.log(1): (result < 0) ? console.log(-1) : (result == 0) ? console.log(0) : (result == null) ? console.log("You didn't enter a number") : console.log("It's not a number");
-// console.log(" ");
-// console.log("Task2");
+console.log("task1");
+var result = prompt("Enter number", "0");
+if (result > 0) {
+    console.log(1);
+} else if (result < 0) {
+    console.log(-1);
+} else if (result == 0) {
+    console.log(0);
+} else if (result == null) {
+    console.log("You didn't enter a number");
+} else {
+    console.log("It's not a number");
+}
+(result > 0) ? console.log(1): (result < 0) ? console.log(-1) : (result == 0) ? console.log(0) : (result == null) ? console.log("You didn't enter a number") : console.log("It's not a number");
+console.log(" ");
+console.log("Task2");
 var numb = prompt("Enter number", 0);
 switch (Number(numb)) {
     case 1:
