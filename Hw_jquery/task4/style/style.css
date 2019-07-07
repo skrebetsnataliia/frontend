@@ -1,0 +1,30 @@
+#one {
+    height: 50px;
+    width: 2px;
+    background: linear-gradient(to right, rgb(99, 201, 99), rgb(46, 184, 46), green);
+    margin: 10px;
+    line-height: 50px;
+}
+
+#one {
+    color: white;
+    font-size: 50px;
+    font-style: italic;
+}
+
+#one::after {
+    content: "100%";
+    position: absolute;
+    left: 88%;
+}
+
+#two {
+    color: black;
+    width: 50%;
+    margin: auto;
+    font-size: 30px;
+    border: 1px solid black;
+    text-align: justify;
+    border-radius: 40px;
+    background: lightcyan;
+}

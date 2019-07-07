@@ -1,0 +1,40 @@
+.modal.is-visible {
+    visibility: visible;
+}
+
+.modal-wrapper {
+    position: absolute;
+    z-index: 9999;
+    top: 6em;
+    left: 50%;
+    width: 32em;
+    margin-left: -16em;
+    background-color: #fff;
+    box-shadow: 0 0 1.5em hsla(0, 0%, 0%, 0.35);
+}
+
+.modal-transition {
+    transition: all 0.3s 0.12s;
+    transform: translateY(-10%);
+    opacity: 0;
+}
+
+.modal.is-visible .modal-transition {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.modal-header,
+.modal-content {
+    padding: 1em;
+}
+
+.modal-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 1em;
+    color: #aaa;
+    background: grey;
+    border: 0;
+}
