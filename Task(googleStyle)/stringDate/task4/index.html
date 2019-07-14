@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <h2>Form</h2>
+    <form action="my.php" method="POST">
+        <label for="name">Name:</label>
+        <div>
+            <input type="text" id="first_name" pattern="[A-Z][A-Za-z]{1,}" required placeholder="First letter must be BIG">
+            <input type="text" id="last_name" pattern="[A-Z][A-Za-z]{1,}" required placeholder="First letter must be BIG">
+        </div>
+        <label for="email">Email:</label>
+        <div><input type="email" name="email" id="email" required></div>
+        <label for="zip">Zip</label>
+        <div><input type="text" id="zip" pattern="[0-9]{5}" required placeholder="Enter five numbers"></div>
+        <div><input type="submit" id="submit"></div>
+    </form>
+    <script src="script/script.js"></script>
+</body>
+
+</html>
