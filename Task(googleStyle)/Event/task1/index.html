@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+        <table class="table table-bordered">
+            <thead>
+                <tr class="text-light bg-dark">
+                    <th scope="col">Product</th>
+                    <th scope="col">Price</th>
+                    <th scope="col">Amont</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="bg-secondary">
+                    <td>Drink</td>
+                    <td><input type="number" id="price_drink"></td>
+                    <td><input type="number" id="amont_drink"></td>
+                </tr>
+                <tr>
+                    <td>Bread</td>
+                    <td><input type="number" id="price_bread"></td>
+                    <td><input type="number" id="amont_bread"></td>
+                </tr>
+                <tr class="bg-secondary">
+                    <td>Fruits</td>
+                    <td><input type="number" id="price_fruit"></td>
+                    <td><input type="number" id="amont_fruit"></td>
+                </tr>
+            </tbody>
+        </table>
+        <p id="total" class="text-center">Total:</p>
+    </div>
+    <script src="script/script.js"></script>
+</body>
+
+</html>
