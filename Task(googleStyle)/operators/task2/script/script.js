@@ -4,7 +4,7 @@
  */
 
 let a = 5;
-let b = 8;
+let b = 9;
 //Code
 if (a === b) {
     rezult = "a and b are equal";
